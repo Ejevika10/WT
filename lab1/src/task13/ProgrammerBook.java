@@ -22,8 +22,8 @@ public class ProgrammerBook extends Book {
             return false;
         if (!obj.getClass().equals(ProgrammerBook.class))
             return false;
-        /*if (!super.equals((Book)obj))
-            return false;*/
+        if (!super.equals(obj))
+            return false;
         ProgrammerBook testObj = (ProgrammerBook) obj;
         if(language.equals(testObj.language) && level == testObj.level){
             return true;

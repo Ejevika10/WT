@@ -40,7 +40,7 @@ public class Book implements Cloneable,Comparable<Book>{
             return true;
         if (obj == null)
             return false;
-        if(!obj.getClass().equals(Book.class)){
+        if(! (obj instanceof Book)){
             return false;
         }
         Book testObj = (Book)obj;

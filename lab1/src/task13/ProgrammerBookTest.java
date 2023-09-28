@@ -16,7 +16,7 @@ public class ProgrammerBookTest {
         ProgrammerBook book3 = new ProgrammerBook("Java Programming","John Doe",10,1,"12vt","Java",2);
 
         assertTrue(book1.equals(book3));
-        //assertFalse(book1.equals(book2));
+        assertFalse(book1.equals(book2));
     }
 
     @Test
